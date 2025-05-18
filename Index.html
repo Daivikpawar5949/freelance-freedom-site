@@ -1,58 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Freelance Freedom</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header { background: #2c3e50; color: white; padding: 20px; text-align: center; }
-        section { padding: 20px; max-width: 800px; margin: auto; }
-        h1 { margin-bottom: 0; }
-        button {
-            background: #27ae60; color: white; border: none; padding: 10px 20px;
-            font-size: 16px; cursor: pointer; border-radius: 5px;
-        }
-        button:hover { background: #219150; }
-        footer { text-align: center; padding: 10px; background: #ecf0f1; margin-top: 40px; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Freelance Freedom</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f4f8;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+      color: #333;
+    }
+    h1 {
+      color: #007acc;
+      margin-bottom: 10px;
+    }
+    p {
+      max-width: 600px;
+      margin-bottom: 30px;
+      font-size: 1.1em;
+      line-height: 1.5;
+    }
+    a.download-button {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #007acc;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: background-color 0.3s ease;
+    }
+    a.download-button:hover {
+      background-color: #005fa3;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Freelance Freedom</h1>
-        <p>Unlock Your True Potential with Freelance Freedom</p>
-    </header>
 
-    <section>
-        <h2>Why Freelance Freedom?</h2>
-        <ul>
-            <li>Work On Your Terms: Choose projects that excite you and work from anywhere.</li>
-            <li>Connect With Top Clients: Access vetted UK-based clients looking for skilled freelancers.</li>
-            <li>Grow Your Skills: Get tips, resources, and courses to level up your freelance game.</li>
-            <li>Secure Payments: Reliable payment systems to keep your income steady and safe.</li>
-        </ul>
-    </section>
+  <h1>Welcome to Freelance Freedom</h1>
+  <p>Download your copy of the <strong>Freelance Freedom Book</strong> and start your journey to freelancing success today!</p>
 
-    <section>
-        <h2>How It Works</h2>
-        <ol>
-            <li>Sign Up & Create Your Profile</li>
-            <li>Browse Jobs & Apply</li>
-            <li>Work & Get Paid</li>
-            <li>Grow & Repeat</li>
-        </ol>
-    </section>
-    
-    <a href="docs/freelance-freedom-book.pdf" target="_blank" download>
-  Download My Book (PDF)
-</a>
- 
-    <section style="text-align:center;">
-        <button onclick="alert('Thanks for joining Freelance Freedom!')">Start Your Freelance Journey</button>
-    </section>
+  <a
+    href="docs/freelance-freedom-book.pdf"
+    class="download-button"
+    target="_blank"
+    download
+    >Download eBook PDF</a
+  >
 
-    <footer>
-        &copy; 2025 Freelance Freedom
-    </footer>
 </body>
 </html>
