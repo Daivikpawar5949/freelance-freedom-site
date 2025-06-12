@@ -8,54 +8,71 @@
     body {
       font-family: Arial, sans-serif;
       background: #f0f4f8;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .container {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      min-height: 100vh;
-      margin: 0;
-      padding: 20px;
       text-align: center;
-      color: #333;
+      min-height: 100vh;
+      padding: 20px;
+      background: 
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+        url('your-background-image.jpg') no-repeat center center / cover;
+      color: #fff;
     }
+
     h1 {
-      color: #007acc;
+      color: #ffd700;
       margin-bottom: 10px;
+      font-size: 2.5em;
     }
+
     p {
       max-width: 600px;
       margin-bottom: 30px;
-      font-size: 1.1em;
-      line-height: 1.5;
+      font-size: 1.2em;
+      line-height: 1.6;
     }
+
     a.download-button {
       display: inline-block;
       padding: 15px 30px;
-      background-color: #007acc;
-      color: white;
+      background: #ffcc00;
+      color: #000;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 50px;
       font-weight: bold;
-      font-size: 1.1em;
-      transition: background-color 0.3s ease;
+      font-size: 1.2em;
+      box-shadow: 0 4px 15px rgba(255, 204, 0, 0.4);
+      transition: all 0.3s ease;
     }
+
     a.download-button:hover {
-      background-color: #005fa3;
+      background: #ffe066;
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(255, 204, 0, 0.6);
     }
   </style>
 </head>
 <body>
 
-  <h1>Welcome to Freelance Freedom</h1>
-  <p>Download your copy of the <strong>Freelance Freedom Book</strong> and start your journey to freelancing success today!</p>
+  <div class="container">
+    <h1>Welcome to Freelance Freedom</h1>
+    <p>Download your copy of the <strong>Freelance Freedom Book</strong> and start your journey to freelancing success today!</p>
 
-  <a
-    href="freelance-freedom-book.pdf"
-    class="download-button"
-    target="_blank"
-    download
-    >Download eBook PDF</a
-  >
+    <a
+      href="freelance-freedom-book.pdf"
+      class="download-button"
+      target="_blank"
+      download
+    >Download eBook PDF</a>
+  </div>
 
 </body>
 </html>
