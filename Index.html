@@ -58,6 +58,16 @@
       transform: scale(1.05);
       box-shadow: 0 6px 20px rgba(255, 204, 0, 0.6);
     }
+
+    .counter {
+      margin-top: 20px;
+      font-size: 1.1em;
+      background: rgba(255, 255, 255, 0.15);
+      padding: 10px 20px;
+      border-radius: 25px;
+      color: #ffd700;
+      box-shadow: 0 0 10px rgba(255, 204, 0, 0.3);
+    }
   </style>
 </head>
 <body>
@@ -69,10 +79,25 @@
     <a
       href="freelance-freedom-book.pdf"
       class="download-button"
+      id="downloadBtn"
       target="_blank"
       download
     >Download eBook PDF</a>
+
+    <div class="counter" id="downloadCount">Downloads: 0</div>
   </div>
+
+  <script>
+    // Get current download count from localStorage or initialize
+    let count = localStorage.getItem('downloadCount') || 0;
+    document.getElementById('downloadCount').textContent = `Downloads: ${count}`;
+
+    document.getElementById('downloadBtn').addEventListener('click', () => {
+      count++;
+      localStorage.setItem('downloadCount', count);
+      document.getElementById('downloadCount').textContent = `Downloads: ${count}`;
+    });
+  </script>
 
 </body>
 </html>
